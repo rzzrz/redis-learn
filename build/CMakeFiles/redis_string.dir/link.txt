@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/redis_string.dir/test/redis-string.cpp.o" -o redis_string  -lhiredis 

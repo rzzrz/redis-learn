@@ -1,0 +1,5 @@
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/test_connect.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/redis_string.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/redis_json.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/edit_cache.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/rebuild_cache.dir
