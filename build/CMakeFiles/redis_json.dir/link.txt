@@ -1,1 +1,0 @@
-/usr/bin/c++ -g "CMakeFiles/redis_json.dir/test/redis-json.cpp.o" -o redis_json  -lhiredis 

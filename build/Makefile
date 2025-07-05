@@ -130,37 +130,100 @@ test_connect/fast:
 .PHONY : test_connect/fast
 
 #=============================================================================
-# Target rules for targets named redis_string
+# Target rules for targets named string_redis
 
 # Build rule for target.
-redis_string: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 redis_string
-.PHONY : redis_string
+string_redis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string_redis
+.PHONY : string_redis
 
 # fast build rule for target.
-redis_string/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_string.dir/build.make CMakeFiles/redis_string.dir/build
-.PHONY : redis_string/fast
+string_redis/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_redis.dir/build.make CMakeFiles/string_redis.dir/build
+.PHONY : string_redis/fast
 
 #=============================================================================
-# Target rules for targets named redis_json
+# Target rules for targets named json_redis
 
 # Build rule for target.
-redis_json: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 redis_json
-.PHONY : redis_json
+json_redis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 json_redis
+.PHONY : json_redis
 
 # fast build rule for target.
-redis_json/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_json.dir/build.make CMakeFiles/redis_json.dir/build
-.PHONY : redis_json/fast
+json_redis/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_redis.dir/build.make CMakeFiles/json_redis.dir/build
+.PHONY : json_redis/fast
+
+#=============================================================================
+# Target rules for targets named list_redis
+
+# Build rule for target.
+list_redis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 list_redis
+.PHONY : list_redis
+
+# fast build rule for target.
+list_redis/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_redis.dir/build.make CMakeFiles/list_redis.dir/build
+.PHONY : list_redis/fast
+
+#=============================================================================
+# Target rules for targets named set_redis
+
+# Build rule for target.
+set_redis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 set_redis
+.PHONY : set_redis
+
+# fast build rule for target.
+set_redis/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/set_redis.dir/build.make CMakeFiles/set_redis.dir/build
+.PHONY : set_redis/fast
+
+#=============================================================================
+# Target rules for targets named hashes_redis
+
+# Build rule for target.
+hashes_redis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hashes_redis
+.PHONY : hashes_redis
+
+# fast build rule for target.
+hashes_redis/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashes_redis.dir/build.make CMakeFiles/hashes_redis.dir/build
+.PHONY : hashes_redis/fast
+
+test/redis-hashes.o: test/redis-hashes.cpp.o
+.PHONY : test/redis-hashes.o
+
+# target to build an object file
+test/redis-hashes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashes_redis.dir/build.make CMakeFiles/hashes_redis.dir/test/redis-hashes.cpp.o
+.PHONY : test/redis-hashes.cpp.o
+
+test/redis-hashes.i: test/redis-hashes.cpp.i
+.PHONY : test/redis-hashes.i
+
+# target to preprocess a source file
+test/redis-hashes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashes_redis.dir/build.make CMakeFiles/hashes_redis.dir/test/redis-hashes.cpp.i
+.PHONY : test/redis-hashes.cpp.i
+
+test/redis-hashes.s: test/redis-hashes.cpp.s
+.PHONY : test/redis-hashes.s
+
+# target to generate assembly for a file
+test/redis-hashes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hashes_redis.dir/build.make CMakeFiles/hashes_redis.dir/test/redis-hashes.cpp.s
+.PHONY : test/redis-hashes.cpp.s
 
 test/redis-json.o: test/redis-json.cpp.o
 .PHONY : test/redis-json.o
 
 # target to build an object file
 test/redis-json.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_json.dir/build.make CMakeFiles/redis_json.dir/test/redis-json.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_redis.dir/build.make CMakeFiles/json_redis.dir/test/redis-json.cpp.o
 .PHONY : test/redis-json.cpp.o
 
 test/redis-json.i: test/redis-json.cpp.i
@@ -168,7 +231,7 @@ test/redis-json.i: test/redis-json.cpp.i
 
 # target to preprocess a source file
 test/redis-json.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_json.dir/build.make CMakeFiles/redis_json.dir/test/redis-json.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_redis.dir/build.make CMakeFiles/json_redis.dir/test/redis-json.cpp.i
 .PHONY : test/redis-json.cpp.i
 
 test/redis-json.s: test/redis-json.cpp.s
@@ -176,15 +239,63 @@ test/redis-json.s: test/redis-json.cpp.s
 
 # target to generate assembly for a file
 test/redis-json.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_json.dir/build.make CMakeFiles/redis_json.dir/test/redis-json.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/json_redis.dir/build.make CMakeFiles/json_redis.dir/test/redis-json.cpp.s
 .PHONY : test/redis-json.cpp.s
+
+test/redis-list.o: test/redis-list.cpp.o
+.PHONY : test/redis-list.o
+
+# target to build an object file
+test/redis-list.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_redis.dir/build.make CMakeFiles/list_redis.dir/test/redis-list.cpp.o
+.PHONY : test/redis-list.cpp.o
+
+test/redis-list.i: test/redis-list.cpp.i
+.PHONY : test/redis-list.i
+
+# target to preprocess a source file
+test/redis-list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_redis.dir/build.make CMakeFiles/list_redis.dir/test/redis-list.cpp.i
+.PHONY : test/redis-list.cpp.i
+
+test/redis-list.s: test/redis-list.cpp.s
+.PHONY : test/redis-list.s
+
+# target to generate assembly for a file
+test/redis-list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_redis.dir/build.make CMakeFiles/list_redis.dir/test/redis-list.cpp.s
+.PHONY : test/redis-list.cpp.s
+
+test/redis-set.o: test/redis-set.cpp.o
+.PHONY : test/redis-set.o
+
+# target to build an object file
+test/redis-set.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/set_redis.dir/build.make CMakeFiles/set_redis.dir/test/redis-set.cpp.o
+.PHONY : test/redis-set.cpp.o
+
+test/redis-set.i: test/redis-set.cpp.i
+.PHONY : test/redis-set.i
+
+# target to preprocess a source file
+test/redis-set.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/set_redis.dir/build.make CMakeFiles/set_redis.dir/test/redis-set.cpp.i
+.PHONY : test/redis-set.cpp.i
+
+test/redis-set.s: test/redis-set.cpp.s
+.PHONY : test/redis-set.s
+
+# target to generate assembly for a file
+test/redis-set.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/set_redis.dir/build.make CMakeFiles/set_redis.dir/test/redis-set.cpp.s
+.PHONY : test/redis-set.cpp.s
 
 test/redis-string.o: test/redis-string.cpp.o
 .PHONY : test/redis-string.o
 
 # target to build an object file
 test/redis-string.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_string.dir/build.make CMakeFiles/redis_string.dir/test/redis-string.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_redis.dir/build.make CMakeFiles/string_redis.dir/test/redis-string.cpp.o
 .PHONY : test/redis-string.cpp.o
 
 test/redis-string.i: test/redis-string.cpp.i
@@ -192,7 +303,7 @@ test/redis-string.i: test/redis-string.cpp.i
 
 # target to preprocess a source file
 test/redis-string.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_string.dir/build.make CMakeFiles/redis_string.dir/test/redis-string.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_redis.dir/build.make CMakeFiles/string_redis.dir/test/redis-string.cpp.i
 .PHONY : test/redis-string.cpp.i
 
 test/redis-string.s: test/redis-string.cpp.s
@@ -200,7 +311,7 @@ test/redis-string.s: test/redis-string.cpp.s
 
 # target to generate assembly for a file
 test/redis-string.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/redis_string.dir/build.make CMakeFiles/redis_string.dir/test/redis-string.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string_redis.dir/build.make CMakeFiles/string_redis.dir/test/redis-string.cpp.s
 .PHONY : test/redis-string.cpp.s
 
 test/test1.o: test/test1.cpp.o
@@ -235,12 +346,24 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... redis_json"
-	@echo "... redis_string"
+	@echo "... hashes_redis"
+	@echo "... json_redis"
+	@echo "... list_redis"
+	@echo "... set_redis"
+	@echo "... string_redis"
 	@echo "... test_connect"
+	@echo "... test/redis-hashes.o"
+	@echo "... test/redis-hashes.i"
+	@echo "... test/redis-hashes.s"
 	@echo "... test/redis-json.o"
 	@echo "... test/redis-json.i"
 	@echo "... test/redis-json.s"
+	@echo "... test/redis-list.o"
+	@echo "... test/redis-list.i"
+	@echo "... test/redis-list.s"
+	@echo "... test/redis-set.o"
+	@echo "... test/redis-set.i"
+	@echo "... test/redis-set.s"
 	@echo "... test/redis-string.o"
 	@echo "... test/redis-string.i"
 	@echo "... test/redis-string.s"

@@ -51,6 +51,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_connect.dir/DependInfo.cmake"
-  "CMakeFiles/redis_string.dir/DependInfo.cmake"
-  "CMakeFiles/redis_json.dir/DependInfo.cmake"
+  "CMakeFiles/string_redis.dir/DependInfo.cmake"
+  "CMakeFiles/json_redis.dir/DependInfo.cmake"
+  "CMakeFiles/list_redis.dir/DependInfo.cmake"
+  "CMakeFiles/set_redis.dir/DependInfo.cmake"
+  "CMakeFiles/hashes_redis.dir/DependInfo.cmake"
   )

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/hashes_redis.dir/test/redis-hashes.cpp.o" -o hashes_redis  -lhiredis 

@@ -21,7 +21,9 @@ endfunction()
 
 
 add_redis_executable(test_connect test/test1.cpp)
-add_redis_executable(redis_string test/redis-string.cpp)
-add_redis_executable(redis_json test/redis-json.cpp)
-
+add_redis_executable(string_redis test/redis-string.cpp)
+add_redis_executable(json_redis test/redis-json.cpp)
+add_redis_executable(list_redis test/redis-list.cpp)
+add_redis_executable(set_redis test/redis-set.cpp)
+add_redis_executable(hashes_redis test/redis-hashes.cpp)
 

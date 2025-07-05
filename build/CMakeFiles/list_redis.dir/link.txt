@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/list_redis.dir/test/redis-list.cpp.o" -o list_redis  -lhiredis 

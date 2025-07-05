@@ -1,5 +1,8 @@
 /home/rzz-rz/workspace/redis-learn/build/CMakeFiles/test_connect.dir
-/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/redis_string.dir
-/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/redis_json.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/string_redis.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/json_redis.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/list_redis.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/set_redis.dir
+/home/rzz-rz/workspace/redis-learn/build/CMakeFiles/hashes_redis.dir
 /home/rzz-rz/workspace/redis-learn/build/CMakeFiles/edit_cache.dir
 /home/rzz-rz/workspace/redis-learn/build/CMakeFiles/rebuild_cache.dir

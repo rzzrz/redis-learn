@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/set_redis.dir/test/redis-set.cpp.o" -o set_redis  -lhiredis 
